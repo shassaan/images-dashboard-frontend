@@ -1,8 +1,5 @@
 import React from 'react'
-import 'antd/dist/antd.css';
-import '../App.css'
 import { Form, Input, Button, Checkbox,Card } from 'antd';
-
 
 const layout = {
     labelCol: {
