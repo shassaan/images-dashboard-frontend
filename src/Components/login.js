@@ -1,8 +1,5 @@
 import React from 'react'
-import 'antd/dist/antd.css';
-import '../App.css'
-import { Form, Input, Button,Card } from 'antd';
-
+import { Form, Input, Button, Checkbox,Card } from 'antd';
 
 const layout = {
     labelCol: {
@@ -23,11 +20,11 @@ const login = () =>{
 
 
     const onFinish = values => {
-        console.log('Success:', values);
+        //console.log('Success:', values);
       };
     
       const onFinishFailed = errorInfo => {
-        console.log('Failed:', errorInfo);
+        //console.log('Failed:', errorInfo);
       };
 
     return(
