@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Input, Button, Checkbox,Card } from 'antd';
+import { Form, Input, Button,Card } from 'antd';
 
 const layout = {
     labelCol: {
@@ -36,9 +36,7 @@ const login = () =>{
     <Form
 {...layout}
 name="basic"
-initialValues={{
-  remember: true,
-}}
+
 onFinish={onFinish}
 onFinishFailed={onFinishFailed}
 >
@@ -68,9 +66,7 @@ onFinishFailed={onFinishFailed}
   <Input.Password />
 </Form.Item>
 
-<Form.Item {...tailLayout} name="remember" valuePropName="checked">
-  <Checkbox>Remember me</Checkbox>
-</Form.Item>
+
 
 <Form.Item {...tailLayout}>
   <Button type="primary" htmlType="submit">
