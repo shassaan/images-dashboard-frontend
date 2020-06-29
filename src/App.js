@@ -10,10 +10,10 @@ function App() {
 
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact strict component={Login} />
+        <Route exact path="/"   component={Login} />
         <MainLayout>
-          <Route path="/layout" exact strict component={MainLayout} />
-          <Route path="/createUser" exact strict component={CreateUserComponent} />
+          <Route exact path="/layout"   component={Login} />
+          <Route exact path="/create-user"   component={CreateUserComponent} />
         </MainLayout>
       </Switch>
     </BrowserRouter>
