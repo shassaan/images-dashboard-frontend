@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
-import Route from 'react-router-dom/Route';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from './Components/Login/login';
 import MainLayout from './Components/Layout/MainLayout';
 import CreateUserComponent from './Components/CreateUserComponent'
@@ -8,15 +7,18 @@ import './App.css'
 
 function App() {
   return (
-    
-    <Router>
-       
-       <Route path="/" exact strict component={()=>{return <Login/>}}/>
-       <Route path="/layout" exact strict component={()=>{return <MainLayout/>}}/>
-       <Route path="/create-user" exact strict component={()=>{return <CreateUserComponent/>}}/>
-       </Router>
-     
-  
+
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact strict component={Login} />
+        <MainLayout>
+          <Route path="/layout" exact strict component={MainLayout} />
+          <Route path="/createUser" exact strict component={CreateUserComponent} />
+        </MainLayout>
+      </Switch>
+    </BrowserRouter>
+
+
   );
 }
 
