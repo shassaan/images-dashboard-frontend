@@ -1,0 +1,18 @@
+.login {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    padding: 20px;
+  }
+
+  .site-card-border-less-wrapper {
+    padding: 120px;
+    background: #ececec;
+    height:620px;
+  }
+
+  

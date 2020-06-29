@@ -1,11 +1,18 @@
 import React from 'react';
-import Login from './Components/login';
+import { BrowserRouter as Router} from "react-router-dom";
+import Route from 'react-router-dom/Route';
+import Login from './Components/Login/login';
+import MainLayout from './Components/Layout/MainLayout'
 import './App.css'
 
 function App() {
   return (
     
-      <Login/>
+    <Router>
+       <Route path="/" exact strict component={()=>{return <Login/>}}/>
+       <Route path="/layout" exact strict component={()=>{return <MainLayout/>}}/>
+       </Router>
+     
   
   );
 }
