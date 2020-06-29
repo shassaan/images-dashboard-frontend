@@ -2,7 +2,7 @@ import React from 'react'
 import { Input, Button, Checkbox, Row, Col} from 'antd';
 import {Link} from 'react-router-dom'; 
 
-const UserCreationForm =()=>{
+const CreateUserComponent =()=>{
 
     
     
@@ -41,4 +41,4 @@ const UserCreationForm =()=>{
     )
 }
 
-export default UserCreationForm;
+export default CreateUserComponent;
