@@ -5,13 +5,15 @@ import  LayoutFooter from './LayoutFooter';
 import  LayoutHeader  from './LayoutHeader';
 import LayoutContent from './LayoutContent';
 
-const MainLayout=()=>{
+const MainLayout=(props)=>{
     return(
         <Layout style={{height:620}}>
             <LayoutSider/>
             <Layout>
                 <LayoutHeader/>
-                <LayoutContent/>
+                <LayoutContent>
+                    {props.children}
+                </LayoutContent>
                 <LayoutFooter/>
             </Layout>
         </Layout>

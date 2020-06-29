@@ -1,7 +1,7 @@
 import React from 'react'
-import './login.css'
-import { Input, Button, Card } from 'antd';
 
+import { Input, Button } from 'antd';
+import './login.css'
 
 
 const login = () => {
@@ -15,27 +15,35 @@ const login = () => {
 
 
 
-        <div className="site-card-border-less-wrapper">
-            <Card title="Login" style={{ width: 400, marginLeft: 370, height: 400 }}>
-                <div className="login">
+       
+            <div className="login">           
+            
+                <h2>Login - Images dashboard</h2>
+                <label>
+                    Username
 
                     <Input
                         placeholder="username"
 
                     />
-                    <Input.Password
+                    </label>
+                   <label>
+                       Password
+                   <Input.Password
                         placeholder="password"
 
                     />
+                   </label>
                     <Button
                         type="primary"
                         block
                         onClick={handleOnClick}                >
                         login
             </Button>
-                </div>
-            </Card>
-        </div>
+                
+           
+            </div>
+        
 
 
 
