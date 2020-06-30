@@ -5,13 +5,13 @@ import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/i
 
 const LayoutMenu =()=>{
 return(
-    <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+    <Menu theme="dark" mode="inline" >
        <Menu.Item key="1" icon={<UserOutlined />}><Link to ="/create-user">
           Create User
           </Link></Menu.Item> 
-        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-          nav 2
-        </Menu.Item>
+        <Menu.Item key="2" icon={<VideoCameraOutlined />}><Link to ="/role-management">
+          Role Management
+          </Link> </Menu.Item>
         <Menu.Item key="3" icon={<UploadOutlined />}>
           nav 3
         </Menu.Item>

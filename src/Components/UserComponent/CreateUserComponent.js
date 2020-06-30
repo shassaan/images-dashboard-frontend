@@ -1,16 +1,29 @@
 import React from 'react'
-import { Input, Button, Checkbox, Row, Col } from 'antd';
-import { Link } from 'react-router-dom';
+import {Form, Input, Button, Checkbox, Row, Col } from 'antd';
+import './UserComponent.css'
+//import { Link } from 'react-router-dom';
 
 const CreateUserComponent = () => {
   return (
-    <div style={{ width: 400, height: 100, marginTop: 100, marginLeft: 200 }}>
-      <h1>User Creation Form</h1>
-      <Input placeholder="Full Name"></Input>
-      <Input placeholder="Email"></Input>
-      <Input placeholder="Date-of-Birth"></Input>
-      <label>Access Role</label>
-      <Checkbox.Group style={{ width: '100%' }} >
+    <div className="create-user-style">
+      <h1>Create User</h1>
+      <Form
+        labelCol={{ span: 7 }}
+        wrapperCol={{ span: 18 }}
+        layout="horizontal"
+       
+      >
+        <Form.Item label="Full Name">
+          <Input />
+        </Form.Item>
+        <Form.Item label="Email">
+          <Input />
+        </Form.Item>
+        <Form.Item label="Date-Of-Birth">
+          <Input />
+        </Form.Item>
+        <Form.Item label="Access Role">
+        <Checkbox.Group style={{ width: '100%' }} >
         <Row>
           <Col span={8}>
             <Checkbox value="A">A</Checkbox>
@@ -29,10 +42,16 @@ const CreateUserComponent = () => {
           </Col>
         </Row>
       </Checkbox.Group>,
+        </Form.Item>
+        <Button type="primary" block style={{ float: 'right' }}>Add</Button>
+        </Form>
+
+     
+     
 
 
-      <Button type="primary" style={{ float: 'right' }}>Add</Button>
-      <Link to="/layout"><Button type="primary" >Back</Button></Link>
+     
+      
 
     </div>
   )
