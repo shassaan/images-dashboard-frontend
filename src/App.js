@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from './Components/Login/login';
 import MainLayout from './Components/Layout/MainLayout';
-import CreateUserComponent from './Components/CreateUserComponent'
+import CreateUserComponent from './Components/UserComponent/CreateUserComponent'
 import './App.css'
 
 function App() {
