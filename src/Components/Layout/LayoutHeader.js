@@ -6,7 +6,7 @@ const { Header } = Layout;
 const LayoutHeader=()=>{
     return(
 
-<Header className="site-layout-sub-header-background" style={{ padding: 0 }} />
+<Header  className="site-layout-sub-header-background" style={{ padding: 0  ,textAlign: 'center' }} ><h1>Image-Gallery Dashboard</h1></Header>
 
     )
 }
