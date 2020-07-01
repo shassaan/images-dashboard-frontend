@@ -1,5 +1,6 @@
-import React from 'react'
-import {Button,List} from 'antd';
+import React ,{ useState } from 'react'
+import {Button,List,Form,Input} from 'antd';
+import  UseModal from './Modal.js' 
 import './RoleManagement.css'
 const data = [
     {
@@ -18,10 +19,16 @@ const data = [
 
 const RoleManagement=()=>{
 
+  const showModal = () => {
+
+   
+
+  
+    }
 
     return(
 <div>
-    <Button type="primary"  shape="round" style={{float:'right'}}>Create Role</Button>
+    <Button type="primary"  shape="round" style={{float:'right'}} onClick={showModal}>Create Role</Button>
        <h2>Roles</h2><br/><hr/>
     <List
     itemLayout="horizontal"
@@ -33,13 +40,36 @@ const RoleManagement=()=>{
           title={item.title}
           description="Ant Design, a design language for background applications, is refined by Ant UED Team"
         />
+        
         <Button type="primary">Edit</Button>
         <Button type="danger">Delete</Button>
 
       </List.Item>
     )}
   />,
+
+<UseModal>
+    <Form
+     labelCol={{ span: 4 }}
+     wrapperCol={{ span: 20 }}
+     layout="vertical"
+     
+   >
+     <Form.Item label="Title">
+       <Input />
+     </Form.Item>
+     <Form.Item label="Description">
+     <Input.TextArea />
+     </Form.Item>
+   </Form>
+
+
+ </UseModal>
+
+
+
 </div>
     )
 }
 export default RoleManagement
+
