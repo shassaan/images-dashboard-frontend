@@ -1,7 +1,6 @@
 import React from 'react'
 import { Form, Input, Button, Checkbox, Row, Col } from 'antd';
 import './UserComponent.css'
-//import { Link } from 'react-router-dom';
 
 const CreateUserComponent = () => {
   return (
@@ -11,7 +10,7 @@ const CreateUserComponent = () => {
         labelCol={{ span: 7 }}
         wrapperCol={{ span: 18 }}
         layout="vertical"
-        
+
       >
         <Form.Item label="Full Name">
           <Input />
@@ -45,14 +44,6 @@ const CreateUserComponent = () => {
         </Form.Item>
         <Button type="primary">Add</Button>
       </Form>
-
-
-
-
-
-
-
-
     </div>
   )
 }

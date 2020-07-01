@@ -1,25 +1,29 @@
-import React ,{ useState } from 'react'
+import React  from 'react'
 import {Button,Modal} from 'antd';
 
 
 const CreateModal=(props)=>{
-const [visible, setVisible] = useState(true);
-  
+
+
+
+
+
  const handleOk = e => {
 
-   setVisible(false)
+   props.setVisible(false)
    
   };
 
   const handleCancel = e => {
 
-    setVisible(false)
+    props.setVisible(false)
+    
     
   };
 
 return(
     <Modal
-          visible={visible}
+          visible={props.visible}
           title="Create Role"
           onOk={handleOk}
           onCancel={handleCancel}
