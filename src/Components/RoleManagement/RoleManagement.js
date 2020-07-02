@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, List, Form, Input } from 'antd';
-import UseModal from './Modal.js'
+import UseModal from '../Modal/Modal.js'
 import './RoleManagement.css'
 const data = [
   {
@@ -48,7 +48,7 @@ const RoleManagement = () => {
         )}
       />,
 
-      <UseModal visible={visiblty} setVisible={setVisiblty}>
+      <UseModal visible={visiblty} title={"Create Role"} setVisible={setVisiblty}>
         <Form
           labelCol={{ span: 4 }}
           wrapperCol={{ span: 20 }}
