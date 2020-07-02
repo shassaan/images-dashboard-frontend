@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal } from 'antd';
+import {Modal } from 'antd';
 
 
 const CreateModal = (props) => {
@@ -27,14 +27,7 @@ const CreateModal = (props) => {
       title={props.title}
       onOk={handleOk}
       onCancel={handleCancel}
-      footer={[
-        <Button key="back" onClick={handleCancel}>
-          Return
-            </Button>,
-        <Button key="submit" type="primary" onClick={handleOk}>
-          Submit
-            </Button>,
-      ]}
+      
     >
       {props.children}
 

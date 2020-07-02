@@ -20,10 +20,7 @@ const data = [
 const RoleManagement = () => {
   const [visiblty, setVisiblty] = useState(false);
   const showModal = () => {
-
     setVisiblty(true);
-
-
   }
 
   return (
