@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Input, Button, Checkbox, Row, Col, List } from 'antd';
-import UseModal from '../Modal/Modal.js'
+import CreateModal from '../Modal/Modal.js'
 import './UserComponent.css'
 const { Search } = Input
 
@@ -52,7 +52,7 @@ const CreateUserComponent = () => {
         )}
       />,
 
-      <UseModal visible={visiblty} title={"Create User"} setVisible={setVisiblty}>
+      <CreateModal visible={visiblty} title={"Create User"} setVisible={setVisiblty}>
         <Form
           labelCol={{ span: 7 }}
           wrapperCol={{ span: 18 }}
@@ -91,7 +91,7 @@ const CreateUserComponent = () => {
         </Form.Item>
           <Button type="primary">Add</Button>
         </Form>
-      </UseModal>
+      </CreateModal>
 
 
     </div>

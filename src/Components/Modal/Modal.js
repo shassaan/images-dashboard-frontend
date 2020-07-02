@@ -27,7 +27,7 @@ const CreateModal = (props) => {
       title={props.title}
       onOk={handleOk}
       onCancel={handleCancel}
-      
+      footer={[]}
     >
       {props.children}
 
