@@ -59,7 +59,7 @@ const RoleManagement = () => {
             <Input.TextArea />
           </Form.Item>
           <Form.Item>
-          <Button type="primary">Save</Button>
+            <Button type="primary">Save</Button>
           </Form.Item>
         </Form>
       </CreateModal>
