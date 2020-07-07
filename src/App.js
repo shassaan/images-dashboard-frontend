@@ -5,7 +5,8 @@ import Login from './Components/Login/login';
 import MainLayout from './Components/Layout/MainLayout';
 import CreateUserComponent from './Components/CreateUserComponent/CreateUserComponent';
 import RoleManagement from './Components/RoleManagement/RoleManagement';
-import UserRequest from './Components/UserRequests/UserRequest'
+import UserRequest from './Components/UserRequests/UserRequest';
+import ProfileSettings from './Components/ProfileSetting/ProfileSetting'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/create-user" component={CreateUserComponent} />
           <Route exact path="/role-management" component={RoleManagement} />
           <Route exact path="/user-requests" component={UserRequest} />
+          <Route exact path="/profile-setting" component={ProfileSettings} />
         </MainLayout>
       </Switch>
     </BrowserRouter>
