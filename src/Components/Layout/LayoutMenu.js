@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { UploadOutlined, UserOutlined, VideoCameraOutlined ,PictureOutlined } from '@ant-design/icons';
 
 const LayoutMenu = () => {
-  return (
+  return ( 
     <Menu theme="dark" mode="inline" >
       <Menu.Item key="1" icon={<UserOutlined />}><Link to="/create-user">
         Create User
@@ -15,8 +15,9 @@ const LayoutMenu = () => {
       <Menu.Item key="3" icon={<UploadOutlined />}><Link to='/user-requests'>
         Requests
          </Link></Menu.Item>
-      <Menu.Item key="4" icon={<UserOutlined />}>
-        nav 4
+      <Menu.Item key="4" icon={<PictureOutlined /> }><Link to='/images-management'>
+      Images</Link>
+        
         </Menu.Item>
     </Menu>
   )
