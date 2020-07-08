@@ -44,6 +44,7 @@ const ImagesManagement = () => {
                         style={{ width: 300 }}
                         cover={
                             <img
+                                alt="example"
                                 src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
                             />
                         }
@@ -62,6 +63,7 @@ const ImagesManagement = () => {
                         style={{ width: 300 }}
                         cover={
                             <img
+                                alt="example"
                                 src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
                             />
                         }
@@ -79,7 +81,9 @@ const ImagesManagement = () => {
                     <Card
                         style={{ width: 300 }}
                         cover={
+
                             <img
+                                alt="example"
                                 src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
                             />
                         }
