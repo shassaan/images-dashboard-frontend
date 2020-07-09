@@ -7,8 +7,8 @@ import CreateUserComponent from './Components/CreateUserComponent/CreateUserComp
 import RoleManagement from './Components/RoleManagement/RoleManagement';
 import UserRequest from './Components/UserRequests/UserRequest';
 import ProfileSettings from './Components/ProfileSetting/ProfileSetting';
-import ImagesManagement from './Components/ImagesManagement/imagesManagement'
-
+import ImagesManagement from './Components/ImagesManagement/imagesManagement';
+import ImageCategory from './Components/ImageCategory/ImageCategory'
 function App() {
   return (
 
@@ -22,6 +22,7 @@ function App() {
           <Route exact path="/user-requests" component={UserRequest} />
           <Route exact path="/profile-setting" component={ProfileSettings} />
           <Route exact path="/images-management" component={ImagesManagement} />
+          <Route exact path="/images-category" component={ImageCategory} />
         </MainLayout>
       </Switch>
     </BrowserRouter>
