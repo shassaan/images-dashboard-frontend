@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Button, Upload, message, Form, Checkbox, Row, Col, Input, Card } from 'antd';
+import { Button, Upload, message, Form, Checkbox, Row, Col, Input, Card, Select } from 'antd';
 import CreateModal from '../Modal/Modal.js';
 import { InboxOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
+const { Option } = Select;
 
 const { Meta } = Card;
 const { Dragger } = Upload;
@@ -120,6 +121,19 @@ const ImagesManagement = () => {
                 >
                     <Form.Item label="Description">
                         <Input.TextArea />
+                    </Form.Item>
+                    <Form.Item label="Category">
+                        <Select
+                            showSearch
+                            style={{ width: 465 }}
+                            placeholder="Select a Category"
+
+
+                        >
+                            <Option value="1">Category 1</Option>
+                            <Option value="2">Category 2</Option>
+                            <Option value="3">Category 3</Option>
+                        </Select>,
                     </Form.Item>
                     <Form.Item label="Access Role">
                         <Checkbox.Group >
